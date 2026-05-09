@@ -406,10 +406,11 @@ h1, h2, h3, h4, .logo {
     min-width: 320px;
     width: 320px;
     white-space: normal;
+    will-change: transform;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) translateZ(0);
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(157, 78, 221, 0.3);
 }
@@ -522,16 +523,17 @@ h1, h2, h3, h4, .logo {
     min-width: 320px;
     width: 320px;
     white-space: normal;
+    will-change: transform;
 }
 
 .price-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateZ(0);
 }
 
 .price-card.popular {
     background: rgba(15, 15, 20, 0.9);
     border-color: var(--primary);
-    transform: scale(1.05);
+    transform: scale(1.05) translateZ(0);
     z-index: 2;
 }
 
@@ -542,11 +544,12 @@ h1, h2, h3, h4, .logo {
     padding-right: 2rem;
     width: max-content;
     align-items: center;
+    will-change: transform;
     /* Animation removed, handled smoothly by JS */
 }
 
 .price-card.popular:hover {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.05) translateY(-10px) translateZ(0);
 }
 
 .popular-bg-glow {

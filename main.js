@@ -1,22 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal Animations on Scroll
+    // Reveal Animations on Scroll (Optimized)
     const revealElements = document.querySelectorAll('.reveal');
 
-    const revealOnScroll = () => {
-        const windowHeight = window.innerHeight;
-        const revealPoint = 150;
-
-        revealElements.forEach((el) => {
-            const revealTop = el.getBoundingClientRect().top;
-
-            if (revealTop < windowHeight - revealPoint) {
-                el.classList.add('active');
-            }
-        });
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
     };
 
-    // Initial check
-    revealOnScroll();
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    revealElements.forEach((el) => {
+        observer.observe(el);
+    });
     
     // Video Scroll Logic
     const heroScrollWrapper = document.querySelector('.hero-scroll-wrapper');
@@ -32,8 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const onScroll = () => {
-        revealOnScroll();
-
         // Control Video Scrubbing
         if (heroScrollWrapper && heroVideo && heroVideo.duration) {
             const rect = heroScrollWrapper.getBoundingClientRect();
@@ -78,9 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if(activePanel) {
                 activePanel.classList.add('active');
                 
-                // Re-trigger reveal animation for newly visible elements
+                // Re-observe if needed, but since they are in DOM, they usually trigger themselves.
                 setTimeout(() => {
-                    revealOnScroll();
+                    document.querySelectorAll('.currency-panel.active .reveal').forEach(el => {
+                        el.classList.add('active');
+                    });
                 }, 100);
             }
         });
