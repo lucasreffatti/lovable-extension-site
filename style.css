@@ -274,6 +274,9 @@ h1, h2, h3, h4, .logo {
     max-height: 60vh;
     object-fit: contain;
     display: block;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .floating-badge {
