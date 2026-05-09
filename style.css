@@ -56,10 +56,11 @@ h1, h2, h3, h4, .logo {
 }
 
 .logo i {
-    background: linear-gradient(135deg, #00f5ff, #3b82f6, #9d4edd);
+    background: linear-gradient(135deg, #00ffff, #0055ff, #d500ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 16px rgba(213, 0, 255, 0.5));
 }
 
 /* Navbar */
@@ -264,22 +265,22 @@ h1, h2, h3, h4, .logo {
     position: relative;
     width: 100%;
     max-width: 700px;
-    border-radius: 12px;
-    overflow: hidden;
-    /* Removed clip-path crop to avoid cutting the video content */
+    max-height: 60vh;
+    aspect-ratio: 1964 / 1056;
     border: 1px solid var(--glass-border);
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 12px;
 }
 
 .hero-img {
     width: 100%;
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     display: block;
     pointer-events: none;
     -webkit-user-select: none;
     user-select: none;
+    border-radius: 12px;
 }
 
 .floating-badge {
