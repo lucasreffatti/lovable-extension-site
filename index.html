@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovable RFT - O Poder Máximo para Lovable.dev</title>
+    <meta name="description"
+        content="Desbloqueie recursos premium na Lovable.dev: créditos infinitos, prompts aprimorados por IA, downloads de projetos e muito mais.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="ph-fill ph-rocket-launch"></i> Lovable RFT
+        </div>
+        <div class="nav-links">
+            <a href="#features">Recursos</a>
+            <a href="#pricing">Planos</a>
+            <a href="#reviews">Avaliações</a>
+            <a href="#pricing" class="btn-primary-small">Assinar Agora</a>
+        </div>
+    </nav>
+
+    <div class="hero-scroll-wrapper">
+        <header class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-content">
+
+                <h1>Liberte o <span>Potencial Máximo</span> dos seus Projetos</h1>
+                <p>Créditos infinitos, IA aprimorada para prompts, downloads em ZIP e muito mais. Acelere seu fluxo de
+                    trabalho como nunca antes.</p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn-primary">Escolher Plano <i class="ph ph-arrow-right"></i></a>
+                    <a href="#features" class="btn-secondary">Conhecer Recursos</a>
+                </div>
+                <div class="hero-secure">
+                    <i class="ph-fill ph-shield-check"></i> Pagamento 100% Seguro via Kirvano
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="video-vignette">
+                    <video src="hero_video_keyframed.mp4" autoplay muted playsinline preload="auto"
+                        class="hero-img"></video>
+                </div>
+                <div class="floating-badge badge-1"><i class="ph-fill ph-infinity"></i> Créditos Infinitos</div>
+                <div class="floating-badge badge-2"><i class="ph-fill ph-magic-wand"></i> IA Avançada</div>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- Disclaimer / Warning Section -->
+    <section class="disclaimer-section">
+        <div class="disclaimer-box">
+            <div class="disclaimer-icon">
+                <i class="ph-fill ph-warning-circle"></i>
+            </div>
+            <div class="disclaimer-content">
+                <h3>Aviso de Transparência</h3>
+                <p>O Lovable RFT utiliza métodos não oficiais para liberar recursos na plataforma Lovable.dev. Por isso,
+                    <strong>não oferecemos garantia de funcionamento ininterrupto</strong>. O sistema depende
+                    exclusivamente da Lovable, que pode atualizar sua infraestrutura a qualquer momento e corrigir
+                    brechas. Estamos constantemente trabalhando em atualizações, mas é essencial que você esteja ciente
+                    desta condição.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2>Tudo o que você precisa para <br><span>produzir mais</span></h2>
+            <p>Nossa extensão turbina sua experiência e remove as limitações.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="ph-fill ph-infinity"></i></div>
+                <h3>Créditos Infinitos</h3>
+                <p>Trabalhe sem interrupções ou limites artificiais. A liberdade que você precisa para iterar seus
+                    projetos até a perfeição.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="ph-fill ph-magic-wand"></i></div>
+                <h3>Melhoria de Prompt por IA</h3>
+                <p>Nossa inteligência artificial reescreve e otimiza seus prompts automaticamente para extrair
+                    resultados imbatíveis.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="ph-fill ph-camera"></i></div>
+                <h3>Capturas de Tela</h3>
+                <p>Salve o estado visual do seu projeto com um único clique. Ideal para versionamento e portfólio.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="ph-fill ph-file-zip"></i></div>
+                <h3>Baixe Projetos em ZIP</h3>
+                <p>Exporte o código fonte completo do seu projeto diretamente para o seu computador em formato ZIP,
+                    pronto para deploy.</p>
+            </div>
+            <div class="feature-card feature-in-dev reveal">
+                <div class="dev-badge">Em Desenvolvimento</div>
+                <div class="feature-icon"><i class="ph-fill ph-eraser"></i></div>
+                <h3>Remoção de Marca D'água</h3>
+                <p>Em breve: uma ferramenta poderosa para remover completamente a marca d'água dos projetos gerados na
+                    plataforma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <h2>Escolha seu <span>Plano</span></h2>
+            <p>Acesse agora mesmo. Pagamento 100% seguro via Kirvano.</p>
+
+            <div class="currency-toggle">
+                <button class="toggle-btn active" data-currency="brl">BRL (R$)</button>
+                <button class="toggle-btn" data-currency="usd">USD ($)</button>
+            </div>
+        </div>
+
+        <!-- BRL Plans -->
+        <div class="pricing-grid currency-panel active" id="panel-brl">
+            <!-- Plan 1 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Semanal</div>
+                <div class="plan-price">R$ 69<span>,90</span></div>
+                <div class="plan-duration">7 dias de acesso</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> Todos os recursos liberados</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Suporte Básico via Email</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Atualizações por 7 dias</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Comprar Agora</a>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Quinzenal</div>
+                <div class="plan-price">R$ 129<span>,90</span></div>
+                <div class="plan-duration">15 dias de acesso</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> Todos os recursos liberados</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Suporte Prioritário</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Atualizações por 15 dias</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Comprar Agora</a>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="price-card popular reveal">
+                <div class="popular-bg-glow"></div>
+                <div class="popular-badge">Mais Popular</div>
+                <div class="plan-name">Mensal</div>
+                <div class="plan-price">R$ 137<span>,00</span></div>
+                <div class="plan-duration">30 dias de acesso</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> Todos os recursos liberados</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Suporte VIP (WhatsApp)</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Atualizações por 30 dias</li>
+                </ul>
+                <a href="#" class="btn-primary">Comprar Agora</a>
+            </div>
+
+            <!-- Plan 4 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Anual</div>
+                <div class="plan-price">R$ 279<span>,00</span></div>
+                <div class="plan-duration">365 dias de acesso</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> Todos os recursos liberados</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Suporte Dedicado 24/7</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Atualizações por 1 ano</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Acesso Antecipado (Novidades)</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Comprar Agora</a>
+            </div>
+        </div>
+
+        <!-- USD Plans -->
+        <div class="pricing-grid currency-panel" id="panel-usd">
+            <!-- Plan 1 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Weekly</div>
+                <div class="plan-price">$ 19<span>,00</span></div>
+                <div class="plan-duration">7 days access</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> All features unlocked</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Basic Email Support</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Updates for 7 days</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Buy Now</a>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Bi-weekly</div>
+                <div class="plan-price">$ 24<span>,90</span></div>
+                <div class="plan-duration">15 days access</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> All features unlocked</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Priority Support</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Updates for 15 days</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Buy Now</a>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="price-card popular reveal">
+                <div class="popular-bg-glow"></div>
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-name">Monthly</div>
+                <div class="plan-price">$ 30<span>,00</span></div>
+                <div class="plan-duration">30 days access</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> All features unlocked</li>
+                    <li><i class="ph-fill ph-check-circle"></i> VIP Support</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Updates for 30 days</li>
+                </ul>
+                <a href="#" class="btn-primary">Buy Now</a>
+            </div>
+
+            <!-- Plan 4 -->
+            <div class="price-card reveal">
+                <div class="plan-name">Yearly</div>
+                <div class="plan-price">$ 64<span>,00</span></div>
+                <div class="plan-duration">365 days access</div>
+                <ul class="plan-features">
+                    <li><i class="ph-fill ph-check-circle"></i> All features unlocked</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Dedicated 24/7 Support</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Updates for 1 year</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Early access to new features</li>
+                </ul>
+                <a href="#" class="btn-primary-outline">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <p>Pague com segurança. Até 12x no cartão de crédito.</p>
+            <div class="payment-icons">
+                <div class="pay-icon"><i class="ph ph-credit-card"></i> Cartão</div>
+                <div class="pay-icon"><i class="ph ph-pix-logo"></i> Pix</div>
+                <div class="pay-icon"><i class="ph ph-barcode"></i> Boleto</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="section-header">
+            <h2>O que dizem nossos <span>usuários</span></h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card reveal">
+                <div class="review-stars">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                        class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p>"Brabo demais, tomara que a Lovable n derrube"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">RC</div>
+                    <div class="reviewer-info">
+                        <strong>Pedro Souza</strong>
+                        <span>Santa Catarina</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card reveal">
+                <div class="review-stars">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                        class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p>"Caraca eu nao botava fé nisso, funciona tudo igual falam no site"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">MF</div>
+                    <div class="reviewer-info">
+                        <strong>Thiago sem T</strong>
+                        <span>São Paulo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card reveal">
+                <div class="review-stars">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                        class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p>"Mesmo sabendo do aviso sobre a Lovable, a extensão entrega muito valor. Créditos infinitos são reais
+                    e aceleram meus freelas em 10x."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">TL</div>
+                    <div class="reviewer-info">
+                        <strong>Tiago L.</strong>
+                        <span>Santa Catarina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-rocket-launch"></i> Lovable RFT
+                </div>
+                <p>A extensão definitiva para maximizar seus resultados na Lovable.dev.</p>
+                <p style="margin-top: 1rem;"><i class="ph-fill ph-envelope-simple"></i> Suporte: <br><a
+                        href="mailto:suporte.lovablerft@outlook.com"
+                        style="color: var(--primary); font-weight: 500;">suporte.lovablerft@outlook.com</a></p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#pricing">Planos</a></li>
+                    <li><a href="#reviews">Avaliações</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" class="legal-link" data-modal="modal-termos">Termos de Uso</a></li>
+                    <li><a href="#" class="legal-link" data-modal="modal-privacidade">Política de Privacidade</a></li>
+                    <li><a href="#" class="legal-link" data-modal="modal-aviso">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lovable RFT. Todos os direitos reservados. Não somos afiliados oficialmente à Lovable.dev.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-termos">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+            <h2>Termos de Uso</h2>
+            <div class="modal-body">
+                <p><strong>1. Aceitação dos Termos</strong><br>Ao acessar e utilizar a extensão Lovable RFT, você
+                    concorda em cumprir e estar vinculado a estes Termos de Uso.</p>
+                <p><strong>2. Natureza do Serviço</strong><br>O Lovable RFT é uma ferramenta de terceiros (não oficial)
+                    projetada para adicionar funcionalidades à plataforma Lovable.dev. Nós não possuímos vínculo,
+                    afiliação ou endosso da plataforma oficial.</p>
+                <p><strong>3. Responsabilidade do Usuário</strong><br>O uso de métodos não oficiais para alterar o
+                    comportamento de plataformas de terceiros é feito por sua própria conta e risco. Não nos
+                    responsabilizamos por eventuais suspensões, banimentos ou perdas de acesso à sua conta original.</p>
+                <p><strong>4. Atualizações e Disponibilidade</strong><br>Como dependemos da infraestrutura da plataforma
+                    original, alterações feitas por eles podem interromper temporariamente ou permanentemente o
+                    funcionamento de nossa extensão. Faremos o possível para manter a ferramenta atualizada, mas não
+                    oferecemos garantias incondicionais de funcionamento ininterrupto.</p>
+                <p><strong>5. Assinaturas, Cancelamentos e Reembolsos</strong><br>Oferecemos uma <strong>Garantia
+                        Incondicional de 7 dias</strong>: se você não gostar da extensão por qualquer motivo dentro
+                    desse prazo, devolveremos 100% do seu dinheiro. No entanto, em decorrência da natureza da
+                    ferramenta, <strong>não haverá reembolso</strong> caso a extensão pare de funcionar devido a
+                    problemas, atualizações da infraestrutura ou bloqueios aplicados pela própria plataforma oficial
+                    Lovable.dev. O cancelamento da assinatura interrompe cobranças futuras, mas não reembolsa períodos
+                    já utilizados além da garantia inicial.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-privacidade">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+            <h2>Política de Privacidade</h2>
+            <div class="modal-body">
+                <p><strong>1. Coleta de Dados</strong><br>Nós respeitamos a sua privacidade. A extensão Lovable RFT foi
+                    projetada para operar localmente em seu navegador. Não coletamos nem armazenamos os códigos-fonte
+                    dos seus projetos, ideias, prompts ou senhas.</p>
+                <p><strong>2. Dados de Pagamento</strong><br>Todo o processamento financeiro é realizado de forma 100%
+                    segura pela plataforma Kirvano. Não temos acesso e não armazenamos nenhum dado sensível do seu
+                    cartão de crédito.</p>
+                <p><strong>3. Informações de Uso</strong><br>Podemos coletar dados analíticos anônimos (como falhas de
+                    extensão e estatísticas de uso genéricas) exclusivamente com o intuito de melhorar a estabilidade e
+                    o desempenho da ferramenta.</p>
+                <p><strong>4. Contato</strong><br>Para dúvidas relacionadas aos seus dados, entre em contato através de
+                    suporte.lovablerft@outlook.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-aviso">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+            <h2>Aviso Legal</h2>
+            <div class="modal-body">
+                <p><strong>Isenção de Responsabilidade e Marcas Registradas</strong></p>
+                <p>"Lovable", "Lovable.dev" e quaisquer marcas, logotipos ou imagens associadas pertencem única e
+                    exclusivamente aos seus respectivos proprietários.</p>
+                <p>O <strong>Lovable RFT</strong> é um projeto de software independente criado com o objetivo de
+                    aprimorar a experiência do usuário, e <strong>NÃO</strong> é afiliado, associado, autorizado,
+                    endossado ou de qualquer forma oficialmente conectado aos criadores originais da plataforma Lovable.
+                </p>
+                <p>O software é fornecido "como está" (as is), sem garantias de qualquer tipo, expressas ou implícitas.
+                    Em nenhuma circunstância os desenvolvedores do Lovable RFT serão responsabilizados por quaisquer
+                    danos diretos ou indiretos resultantes do uso ou da impossibilidade de uso desta extensão.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
