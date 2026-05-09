@@ -56,7 +56,10 @@ h1, h2, h3, h4, .logo {
 }
 
 .logo i {
-    color: var(--primary);
+    background: linear-gradient(135deg, #00f5ff, #3b82f6, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Navbar */
